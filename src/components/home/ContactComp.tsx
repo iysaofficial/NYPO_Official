@@ -65,6 +65,7 @@ const ContactComp = () =>{
                 <div className="contact-form-wrap">
                     <form action="" method="POST" name="home-contact">
                         <h2 className="contact-form-title">Kirim Pesan</h2>
+                        <input type="hidden" name="Event" value="NYPO" readOnly />
                         <div className="contact-form-fields">
                             <div className="contact-form-group">
                                 <input type="text" name="Name" className="fname" placeholder="Masukan nama anda"/>
