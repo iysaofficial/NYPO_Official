@@ -9,11 +9,11 @@ const HeroComp = () => {
                 <br />
                 <img src="/assets/images/logo/NYPO.png" alt=""/>
                 <h1>National Youth Physics Olympiad</h1>
-                {/* <p>Pendaftaran International Youth Physics Olympiad telah dibuka!<br /> dengan acara bergengsi ini dan dapatkan pengalaman yang tak terlupakan!
-                </p> */}
+                <p>Pendaftaran International Youth Physics Olympiad telah dibuka!<br /> dengan acara bergengsi ini dan dapatkan pengalaman yang tak terlupakan!
+                </p>
                 <br />
                 <br />
-                <Link href="#" className="registration-button">Segera Hadir 2026</Link>
+                <Link href="/registration" className="registration-button">Registrasi</Link>
                 
                 <div className="hero-social-icon">
                     <br />
