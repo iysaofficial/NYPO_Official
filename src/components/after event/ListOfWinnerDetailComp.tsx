@@ -58,37 +58,41 @@ const ListOfWinnerDetailComp: React.FC<WinnerDetailProps> = ({ year }) => {
                             <Link href={data.winnerListUrl} target="_blank" className="low-detail-document-button">Download</Link>
                         </div>
                     </div>
-                    <div className="serviceBox">
-                        <div className="icon">
-                            <i className="fa-solid fa-bars"></i>
-                        </div>
-                        <div className="content">
-                            <h2>Kurasi</h2>
-                            <br />
-                            <Link href={data.curationUrl} target="_blank" className="low-detail-document-button">Download</Link>
-                        </div>
-                    </div>
+                    {data.curationUrl && (
+                       <div className="serviceBox">
+                           <div className="icon">
+                               <i className="fa-solid fa-bars"></i>
+                           </div>
+                           <div className="content">
+                               <h2>Kurasi</h2>
+                               <br />
+                               <Link href={data.curationUrl} target="_blank" className="low-detail-document-button">Download</Link>
+                           </div>
+                       </div>
+                    )}
                     <br />
                     <br />
                     <br />
                 </div>
             </section>
 
-            <section className="head-low-detail-document-section" id="head-low-detail-document">
-                <div className="head-low-detail-document-heading">
-                    <h1 className="section-header">Press Release {data.year}</h1>
-                </div>
-                <section className="low-press-release-section">
-                    <div className="low-press-release-container">
-                        <div className="low-press-release-wrapper">
-                            <iframe src={data.pressReleasePreviewUrl}></iframe>
-                        </div>
-                    </div>
-                </section>
-                <div className="low-press-release-button-container">
-                    <Link href={data.pressReleaseDownloadUrl} className="low-press-release-button">Download Press Release</Link>
-                </div>
-            </section>
+           {data.pressReleasePreviewUrl && data.pressReleaseDownloadUrl && (
+               <section className="head-low-detail-document-section" id="head-low-detail-document">
+                   <div className="head-low-detail-document-heading">
+                       <h1 className="section-header">Press Release {data.year}</h1>
+                   </div>
+                   <section className="low-press-release-section">
+                       <div className="low-press-release-container">
+                           <div className="low-press-release-wrapper">
+                               <iframe src={data.pressReleasePreviewUrl}></iframe>
+                           </div>
+                       </div>
+                   </section>
+                   <div className="low-press-release-button-container">
+                       <Link href={data.pressReleaseDownloadUrl} className="low-press-release-button">Download Press Release</Link>
+                   </div>
+               </section>
+           )}
             <br />
         </>
     )
