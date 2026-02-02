@@ -143,6 +143,13 @@ const NavbarComp = () =>{
                         </Link>
                         <ul className='sub-menu'>
                             <li className='sub-item'>
+                                <Link href="https://drive.google.com/drive/u/0/folders/11THF_yzE76YPSwqzUib5AcRuMZszqaA4" 
+                                    target='_blank' 
+                                    rel="noopener noreferrer">
+                                        Sertifikat Supervisor 2026
+                                </Link>
+                            </li>
+                            <li className='sub-item'>
                                 <Link href="https://drive.google.com/drive/folders/1HYevQOGrxqVCRxbtw0Hp8r1WlFSJbq4E?usp=sharing" 
                                     target='_blank' 
                                     rel="noopener noreferrer">
