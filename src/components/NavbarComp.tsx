@@ -129,13 +129,14 @@ const NavbarComp = () =>{
                             <li className='sub-item'><a href="https://drive.google.com/file/d/1AS-LH4HLaqT33iyC6c3ibZKd-lsP3U8x/view?usp=drive_link" target='_blank'>Daftar Pemenang 2024</a></li>
                         </ul> */}
                     </li> 
-                    {/* <li className='menu-item'>
+                    <li className='menu-item'>
                         <a className='sub-btn' href="#">Kurasi <i className='fas fa-angle-down'></i></a>
                         <ul className='sub-menu'>
+                            <li className='sub-item'><a href="https://drive.google.com/drive/u/0/folders/1sk8z0yZk1HsUPG3E7LkvqonvWlxcqfC6" target='_blank'>Kurasi 2026</a></li>
                             <li className='sub-item'><a href="https://drive.google.com/drive/folders/1GX6vTuVSFexUabNK4Gx0J86kSBhNeNJ3?usp=sharing" target='_blank'>Kurasi 2025</a></li>
                             <li className='sub-item'><a href="https://drive.google.com/drive/folders/1zWjmXL40yto118u2ydFRTJPEMv4W3jRG?usp=sharing" target='_blank'>Kurasi 2024</a></li>
                         </ul>
-                    </li>  */}
+                    </li> 
                     
                     <li className='menu-item'>
                         <Link className='sub-btn' href="#">
